@@ -5,5 +5,6 @@ Projeto inspirado no aplicativo Tinder desenvolvido para participar no processo 
 
 ## Principais Recursos
   - The Cat Api
-  - Navegação swype estilo Tinder
+  - Customização de fontes
+  - Navegação com cards
   - Compartilhamento de imagens
