@@ -20,4 +20,8 @@
         <value>Main Page</value>
         <comment>The title of the Main Page</comment>
     </data>
+    <data name="CatListPageTitle" xml:space="preserve">
+        <value>Tindercat App</value>
+        <comment>Gatos</comment>
+    </data>
 </root>

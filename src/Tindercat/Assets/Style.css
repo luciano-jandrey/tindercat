@@ -1,0 +1,29 @@
+﻿^contentpage {
+    background-color: #fbce07;
+    padding: 20;
+}
+
+.text-title-dark {
+    color: #404040;
+    font-size: 22;
+}
+
+.text-header-dark {
+    color: #404040;
+    font-size: 16;
+}
+
+.text-body-dark {
+    color: #404040;
+    font-size: 14;
+}
+
+.text-contact-dark {
+    color: #404040;
+    font-size: 12;
+}
+
+.text-copyright-dark {
+    color: #404040;
+    font-size: 12;
+}

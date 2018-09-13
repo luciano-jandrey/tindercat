@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<linker>
+  <assembly fullname="DryIoc">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="System">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="mscorlib">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Prism">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Prism.DryIoc.Forms">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Tindercat">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Prism.Forms">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Prism.Forms.Extensions">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Plugin.Share">
+    <type fullname="*" />
+  </assembly>
+  
+  <assembly fullname="Newtonsoft.Json">
+    <type fullname="*" />
+  </assembly>
+ 
+   <assembly fullname="RestSharp">
+    <type fullname="*" />
+  </assembly>  
+</linker>

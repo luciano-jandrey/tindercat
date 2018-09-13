@@ -17,7 +17,6 @@ namespace Tindercat.ViewModels
                                  IDeviceService deviceService)
             : base(navigationService, pageDialogService, deviceService)
         {
-            Title = AppResources.MainPageTitle;
         }
 
         public override void OnNavigatingTo(NavigationParameters parameters)

@@ -13,6 +13,7 @@ using Prism.Logging;
 using Xamarin.Forms;
 
 using DebugLogger = Tindercat.Services.DebugLogger;
+using Tindercat.Cats;
 
 namespace Tindercat
 {
@@ -40,23 +41,20 @@ namespace Tindercat
             LogUnobservedTaskExceptions();
             AppResources.Culture = CrossMultilingual.Current.DeviceCultureInfo;
 
-            await NavigationService.NavigateAsync("SplashScreenPage");
+            await NavigationService.NavigateAsync("CatListPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Register the Popup Plugin Navigation Service
             containerRegistry.RegisterPopupNavigationService();
             containerRegistry.RegisterInstance(CreateLogger());
 
+            containerRegistry.Register<ICatService, CatService>();
 
-            // Navigating to "TabbedPage?createTab=ViewA&createTab=ViewB&createTab=ViewC will generate a TabbedPage
-            // with three tabs for ViewA, ViewB, & ViewC
-            // Adding `selectedTab=ViewB` will set the current tab to ViewB
             containerRegistry.RegisterForNavigation<TabbedPage>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<SplashScreenPage>();
+            containerRegistry.RegisterForNavigation<CatListPage>();
         }
 
         protected override void OnStart()
@@ -85,10 +83,10 @@ namespace Tindercat
 
         private void LogUnobservedTaskExceptions()
         {
-            TaskScheduler.UnobservedTaskException += (sender, e) =>
-            {
-                Container.Resolve<ILoggerFacade>().Log(e.Exception);
-            };
+            //TaskScheduler.UnobservedTaskException += (sender, e) =>
+            //{
+            //    Container.Resolve<ILoggerFacade>().Log(e.Exception);
+            //};
         }
     }
 }
